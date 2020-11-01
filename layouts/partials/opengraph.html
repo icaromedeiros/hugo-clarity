@@ -45,7 +45,7 @@
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $summary }}" />
 <meta property="og:image" content="{{ $image }}" />
-{{- if eq .Section $s.blogDir -}}
+{{- if eq .Section "post" -}}
   {{- $date := ( .Date.Format "2006-02-01") -}}
   {{- $date := (time .Date) }}
   {{- $lastMod := (time .Lastmod) }}
